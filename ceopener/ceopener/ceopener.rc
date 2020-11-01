@@ -1,0 +1,166 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    "SETTING_PARENT", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    "TRANS_SETTING", DIALOG
+    BEGIN
+        RIGHTMARGIN, 161
+    END
+
+    "KEY_BINDING", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+SETTING_PARENT DIALOG  0, 0, 239, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ceOpenerの設定"
+FONT 9, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",1,121,145,51,12
+    PUSHBUTTON      "キャンセル",2,178,145,51,12
+    CONTROL         "",111,"SysTabControl32",0x0,7,4,222,137
+END
+
+VIEWING DIALOG  0, 0, 197, 106
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 9, "MS Shell Dlg"
+BEGIN
+    LTEXT           "フォント:",101,6,13,36,9
+    LTEXT           "（ceOpener の再起動が必要）",104,6,27,117,9
+    LTEXT           "壁紙:",113,6,59,39,9
+    COMBOBOX        114,49,57,126,66,CBS_DROPDOWNLIST | CBS_HASSTRINGS | WS_VSCROLL,WS_EX_NOPARENTNOTIFY
+    CONTROL         "タイトルバーがないウィンドウもタスクバーに表示",121,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,76,165,9
+    COMBOBOX        112,49,39,126,66,CBS_DROPDOWNLIST | CBS_HASSTRINGS | WS_VSCROLL,WS_EX_NOPARENTNOTIFY
+    LTEXT           "配色:",111,6,40,21,8
+    CTEXT           "",102,48,12,111,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "...",103,159,12,15,12
+    CONTROL         "タスクバーなどのサイズを解像度に合わせて変更",122,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,90,157,10
+    LTEXT           "（ceOpener の再起動が必要）",105,8,102,117,9
+END
+
+TRANS_SETTING DIALOG  0, 0, 162, 102
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 9, "MS Shell Dlg"
+BEGIN
+    LISTBOX         111,7,16,88,81,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "100%",121,"Button",BS_AUTORADIOBUTTON,109,22,40,10
+    CONTROL         "75%",122,"Button",BS_AUTORADIOBUTTON,109,43,47,10
+    CONTROL         "50%",123,"Button",BS_AUTORADIOBUTTON,109,65,47,10
+    CONTROL         "25%",124,"Button",BS_AUTORADIOBUTTON,109,84,47,10
+    LTEXT           "不透明度",-1,119,5,36,8
+    LTEXT           "設定する項目",-1,27,4,46,8
+END
+
+SE_SETTING DIALOG  0, 0, 210, 105
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "MS UI Gothic"
+BEGIN
+    CONTROL         "",111,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,8,5,187,93
+    PUSHBUTTON      "再生",121,5,102,20,14
+    PUSHBUTTON      "停止",122,28,102,21,14
+    EDITTEXT        131,50,102,140,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",123,191,102,15,14
+END
+
+KEY_BINDING DIALOG  0, 0, 265, 145
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "キーの割り当て"
+FONT 9, "MS Shell Dlg"
+BEGIN
+    CONTROL         "",101,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,6,6,126,132,WS_EX_NOPARENTNOTIFY
+    CONTROL         "有効",111,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,141,9,41,9
+    CONTROL         "機能 +",122,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,153,39,46,8
+    CTEXT           "",123,153,54,72,12,WS_BORDER
+    PUSHBUTTON      "...",124,225,54,15,12
+    PUSHBUTTON      "デフォルト",125,186,72,54,12
+    GROUPBOX        "対象のキー",121,141,27,114,63
+    DEFPUSHBUTTON   "OK",1,150,126,51,12
+    PUSHBUTTON      "キャンセル",2,207,126,51,12
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

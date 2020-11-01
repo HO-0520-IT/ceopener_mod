@@ -1,0 +1,117 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource1.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+SYMBOL_HALF             ICON                    "Icon_12.ico"
+ALPHA_HALF              ICON                    "Icon_7.ico"
+HIRA                    ICON                    "Icon_8.ico"
+NUMBER_FULL             ICON                    "Icon_9.ico"
+NUMBER_HALF             ICON                    "Icon_10.ico"
+SYMBOL_FULL             ICON                    "Icon_11.ico"
+NOMODE                  ICON                    "Icon_13.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+SETTINGS DIALOG  0, 0, 184, 121
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "InputSwtichの設定"
+FONT 9, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,69,102,51,12
+    PUSHBUTTON      "キャンセル",IDCANCEL,126,102,51,12
+    CONTROL         "サブタッチパネルを使用する",111,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,27,124,9
+    LTEXT           "入力中のフォントサイズ",IDC_STATIC,9,9,99,8
+    COMBOBOX        102,114,9,39,57,CBS_DROPDOWNLIST | CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "サブタッチパネルを全部使う(第二世代のみ)",112,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,40,157,10
+    CONTROL         "辞書アプリが前面にある時に機能を無効化する",113,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,54,165,10
+    CONTROL         "ハイフンとShift+ハイフンの機能を入れ替える",114,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,9,68,165,10
+    LTEXT           "改造版inputswitch Ver.0.15 beta",IDC_STATIC,9,82,170,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    "SETTINGS", DIALOG
+    BEGIN
+        VERTGUIDE, 71
+        BOTTOMMARGIN, 114
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

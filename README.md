@@ -1,2 +1,2 @@
 # ceopener_mod
-ceOpener を第三・四・五世代に最適化するなどしたもの。
+knatech氏が開発し、Grain氏が作り直した ceOpener を、第三世代以降用に使いやすく改造したものです。
